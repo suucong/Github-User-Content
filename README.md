@@ -13,7 +13,9 @@ Hearing impaired learn pronunciation to ultimately communicate seamlessly with n
 Even without pronunciation training and correction, real-time communication with non-disabled individuals is facilitated through sign language or text.
 
 # 📱 How to use
-<img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/onboarding.gif"/>
+| 이미지 | 설명 |
+| ---| --- |
+|<img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/oboarding2.gif"/>|users can test their pronunciation skills and receive a recommended starting level. Users take a pronunciation accuracy test of 3 questions at each stages and receive a recommended starting level. The grading method for a passing grade is recommended as a starting point for learning your own pronunciation.|
 
 # 🛠️ Project Architecture
 <img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/Tech.png"/>
