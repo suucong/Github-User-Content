@@ -13,9 +13,7 @@ Hearing impaired learn pronunciation to ultimately communicate seamlessly with n
 Even without pronunciation training and correction, real-time communication with non-disabled individuals is facilitated through sign language or text.
 
 # 📱 How to use
-<img src="https://storage.googleapis.com/prodiction-bucket/splash%26login.gif"/>
-<img src="https://storage.googleapis.com/prodiction-bucket/onboarding.gif"/>
-<img src="https://storage.googleapis.com/prodiction-bucket/study1.gif"/>
+<img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/onboarding.gif"/>
 
 # 🛠️ Project Architecture
 <img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/Tech.png"/>
