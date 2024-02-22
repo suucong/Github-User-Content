@@ -13,12 +13,12 @@ Hearing impaired learn pronunciation to ultimately communicate seamlessly with n
 Even without pronunciation training and correction, real-time communication with non-disabled individuals is facilitated through sign language or text.
 
 # 📱 How to use
-| 이미지 | 설명 |
-| ---| --- |
-|<img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/oboarding2.gif"/>|users can test their pronunciation skills and receive a recommended starting level. Users take a pronunciation accuracy test of 3 questions at each stages and receive a recommended starting level. The grading method for a passing grade is recommended as a starting point for learning your own pronunciation.|
+<img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/splash&login.gif"/>
+<img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/onboarding.gif"/>
+<img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/mypage.gif"/>
 
 # 🛠️ Project Architecture
-<img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/Tech.png"/>
+<img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/TechStack.png"/>
 
 ## Backend
 ### 1. Tech Stack
@@ -31,12 +31,17 @@ Even without pronunciation training and correction, real-time communication with
 - GCP Compute Engine
 
 ### 2. Architecture
-- I built an image from the Springboot project using Dockerfile
-- I pushed it to Dockerhub
-- I used the Vim text editor within a GCP Compute Engine instance to write the ([docker-compose.yml](https://github.com/GDSC-SWU/2024-ProDiction-SolutionChallenge/issues/37#issuecomment-1948326979))
-- I pulled Springboot image, MySQL and Redis images
-- docker-compose up -d to create containers
-- I created a user, schema and database using a Docker MySQL container
+- I built a Docker image for our Spring Boot project using a Dockerfile and pushed it to Dockerhub.
+- Next, I used the Vim text editor within a GCP Compute Engine instance to write the docker-compose.yml file.
+- After that, I pulled the Spring Boot image, along with MySQL and Redis images. 
+- Running 'docker-compose up -d' created the necessary containers. 
+- Subsequently, I utilized a Docker MySQL container to create a user, schema, and database. 
+- Backend communicated with the frontend using the server container we created. 
+- To connect to an external API for pronunciation testing, the frontend sent recorded audio files to the server using Multipart. 
+- The server then handled the encoding to Base64 and sent the encoded values to the external API. 
+- Additionally, we stored Refresh Tokens in the Redis container for user authentication and authorization.
+- The external API processed the audio, returned the pronunciation scores to the server, which in turn forwarded them to the frontend.
+- Furthermore, to play pronunciation practice videos, the backend sends the string that needs to be pronounced to an AI server. The AI server then separates the consonants and vowels in the string.
 
 ### 3. ERD
 <img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/erd2.png"/>
