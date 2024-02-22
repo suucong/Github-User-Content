@@ -18,7 +18,7 @@ Even without pronunciation training and correction, real-time communication with
 <img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/onboarding.gif"/>
 <img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/study1.gif"/>
 <img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/study2.gif"/>
-<img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/study3.gif" style="width: 100%; height: auto;">
+<img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/study3.gif" width=100%>
 <img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/communication2.gif"/>
 <img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/communication.gif"/>
 <img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/mypage_voca.gif"/>
