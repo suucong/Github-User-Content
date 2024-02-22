@@ -1,4 +1,5 @@
 # Pro-Diction
+<img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/prodiction.png"/>
 
 # ⛳️ Target UN SDGs
 <img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/sdg4.png" width=200/> <img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/sdg10.png" width=200/>
@@ -15,7 +16,13 @@ Even without pronunciation training and correction, real-time communication with
 # 📱 How to use
 <img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/splash&login.gif"/>
 <img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/onboarding.gif"/>
-<img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/mypage.gif"/>
+<img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/study1.gif"/>
+<img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/study2.gif"/>
+<img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/study3.gif" style="width: 100%; height: auto;">
+<img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/communication2.gif"/>
+<img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/communication.gif"/>
+<img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/mypage_voca.gif"/>
+<img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/mypage_call.gif"/>
 
 # 🛠️ Project Architecture
 <img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/TechStack.png"/>
@@ -51,8 +58,9 @@ Even without pronunciation training and correction, real-time communication with
 - Kotlin plugin version 1.9.0
 
 ### 2. Architecture
-- Google's TextToSpeech (TTS) built into Android was used to read sign language by voice or play text by voice. In addition, using a SpeechRecognizer (STT), it was possible to return the other person's voice as text.
-It was implemented to recognize sign language through a camera on Android devices using MediaPipe's Hand Gesture Recognition.
+- We used Kotlin and XML to develop the Android app. We implemented Google OAuth within Android Studio to allow users to use the app after signing in with Google. 
+- We also used Google's built-in Speech Recognizer and Text to Speech feature as speed is important for the real-time communication menu. 
+- We imported the mouth shape and tongue position images for the learning menu from Google Cloud Storage.
 
 ## AI
 ### 1. Tech Stack
