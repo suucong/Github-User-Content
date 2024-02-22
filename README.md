@@ -1,5 +1,4 @@
 # Pro-Diction
-<img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/prodiction.png"/>
 
 # ⛳️ Target UN SDGs
 <img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/sdg4.png" width=200/> <img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/sdg10.png" width=200/>
@@ -12,6 +11,9 @@ Hearing impaired learn pronunciation to ultimately communicate seamlessly with n
 
 ### 🚀 Current Fluent Communication:
 Even without pronunciation training and correction, real-time communication with non-disabled individuals is facilitated through sign language or text.
+
+# 🎥 Our Demo Video
+[![demo video](https://raw.githubusercontent.com/suucong/Github-User-Content/main/prodiction.png)](https://youtu.be/LSF4giPHVto)
 
 # 📱 How to use
 <img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/splash&login.gif"/>
