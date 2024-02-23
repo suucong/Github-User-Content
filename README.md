@@ -13,7 +13,7 @@ Hearing impaired learn pronunciation to ultimately communicate seamlessly with n
 Even without pronunciation training and correction, real-time communication with non-disabled individuals is facilitated through sign language or text.
 
 # 🎥 Our Demo Video
-[![demo video](https://raw.githubusercontent.com/suucong/Github-User-Content/main/prodiction.png)](https://youtu.be/LSF4giPHVto)
+[![demo video](https://raw.githubusercontent.com/suucong/Github-User-Content/main/prodiction.png)](https://youtu.be/NOwo06cDY_U)
 
 # 📱 How to use
 <img src="https://raw.githubusercontent.com/suucong/Github-User-Content/main/splash&login.gif"/>
@@ -41,15 +41,15 @@ Even without pronunciation training and correction, real-time communication with
 
 ### 2. Architecture
 - I built a Docker image for our Spring Boot project using a Dockerfile and pushed it to Dockerhub.
-- Next, I used the Vim text editor within a GCP Compute Engine instance to write the docker-compose.yml file.
+- Next, I used the Vim text editor within a GCP Compute Engine instance to write the [docker-compose.yml](https://github.com/GDSC-SWU/2024-ProDiction-SolutionChallenge/issues/37#issuecomment-1948326979).
 - After that, I pulled the Spring Boot image, along with MySQL and Redis images. 
 - Running 'docker-compose up -d' created the necessary containers. 
 - Subsequently, I utilized a Docker MySQL container to create a user, schema, and database. 
 - Backend communicated with the frontend using the server container we created. 
 - To connect to an external API for pronunciation testing, the frontend sent recorded audio files to the server using Multipart. 
-- The server then handled the encoding to Base64 and sent the encoded values to the external API. 
-- Additionally, we stored Refresh Tokens in the Redis container for user authentication and authorization.
+- The server then handled the encoding to Base64 and sent the encoded values to the external API.
 - The external API processed the audio, returned the pronunciation scores to the server, which in turn forwarded them to the frontend.
+- Additionally, we stored Refresh Tokens in the Redis container for user authentication and authorization.
 - Furthermore, to play pronunciation practice videos, the backend sends the string that needs to be pronounced to an AI server. The AI server then separates the consonants and vowels in the string.
 
 ### 3. ERD
@@ -78,8 +78,9 @@ Even without pronunciation training and correction, real-time communication with
 - soundfile 0.12.1
 
 ### 2. Architecture
-- We used MediaPipe's Gesture Recognizer to train sign language recognition model 
-- Using the audiosegment, pydub, librosa, ffmpeg, and google-cloud-speech libraries, we implemented a syllable-by-syllable breakdown of a single voice file by separating it into chunks of more than a certain number of waves, and then using Google's speech to text technology to recognize the pronunciation of each syllables
+- To implement the communication function, I used Colab to train Google MediaPipe's Gesture Recognizer model through manually collected sign language images, and then saved them as task files and handed them over to Android.
+- In order to learn how the user's pronunciation differs from the standard pronunciation by syllable, we used libraries such as FFmpeg and librosa to cut the voice file delivered by Android through the server into syllables, and then passed it to the Google Cloud Speech API to get the syllable-by-syllable pronunciation.
+- I converted all functions to FastAPI, and then dockerized them, and pushed them to Docker Hub. After that, we deployed the server by pulling the docker image to the Virtual Machine inside Google's Compute Engine and deployed the server to communicate with Android.
 
 # Member
 |Member|[이서현 (Lee Seohyun)](https://github.com/bimeon)|[노수진 (Sujin Roh)](https://github.com/suucong)|[김하연 (Kim Hayeon)](https://github.com/hyhy0623)|[김예솔 (Kim Yesol)](https://github.com/yesolthee)|
